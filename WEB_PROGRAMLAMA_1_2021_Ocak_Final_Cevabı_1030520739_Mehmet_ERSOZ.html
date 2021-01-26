@@ -63,6 +63,78 @@
               div.style.display = "none";
             }
           }
+        }function newElementekmek() {
+          var li = document.createElement("li");
+          var inputValue = 'Somun ekmek (1) 2₺';
+          var t = document.createTextNode(inputValue);
+          li.appendChild(t);
+          if (inputValue === '') {
+            alert("You must write something!");
+          } else {
+            document.getElementById("myUL").appendChild(li);
+          }
+          //document.getElementById("myInput").value = "";
+        
+          var span = document.createElement("SPAN");
+          var txt = document.createTextNode("\u00D7");
+          span.className = "close";
+          span.appendChild(txt);
+          li.appendChild(span);
+        
+          for (i = 0; i < close.length; i++) {
+            close[i].onclick = function() {
+              var div = this.parentElement;
+              div.style.display = "none";
+            }
+          }
+        }function newElementCik() {
+          var li = document.createElement("li");
+          var inputValue = 'Domates (1) 6₺';
+          var t = document.createTextNode(inputValue);
+          li.appendChild(t);
+          if (inputValue === '') {
+            alert("You must write something!");
+          } else {
+            document.getElementById("myUL").appendChild(li);
+          }
+          //document.getElementById("myInput").value = "";
+        
+          var span = document.createElement("SPAN");
+          var txt = document.createTextNode("\u00D7");
+          span.className = "close";
+          span.appendChild(txt);
+          li.appendChild(span);
+        
+          for (i = 0; i < close.length; i++) {
+            close[i].onclick = function() {
+              var div = this.parentElement;
+              div.style.display = "none";
+            }
+          }
+        }function newElementDom() {
+          var li = document.createElement("li");
+          var inputValue = 'Çikolata (1) 5₺';
+          var t = document.createTextNode(inputValue);
+          li.appendChild(t);
+          if (inputValue === '') {
+            alert("You must write something!");
+          } else {
+            document.getElementById("myUL").appendChild(li);
+          }
+          //document.getElementById("myInput").value = "";
+        
+          var span = document.createElement("SPAN");
+          var txt = document.createTextNode("\u00D7");
+          span.className = "close";
+          span.appendChild(txt);
+          li.appendChild(span);
+        
+          for (i = 0; i < close.length; i++) {
+            close[i].onclick = function() {
+              var div = this.parentElement;
+              div.style.display = "none";
+            }
+          }
         }
         </script>
 
@@ -96,7 +168,7 @@ adedini belirtiniz.</p>
       <h1>2₺ / Adet</h1>
     <p>Somun ekmek</p>
     <p>200 gr</p>
-    <button id="asd" class ="center-blue" >
+    <button id="asd" class ="center-blue"onclick="newElementekmek()" >
         Sepete Ekle
     </button>
   </div>
@@ -105,7 +177,7 @@ adedini belirtiniz.</p>
       <h1>5₺ / Adet</h1>
     <p>Biter çikolata</p>
     <p>60 gr</p>
-    <button id="asd" class ="center-blue" >
+    <button id="asd" class ="center-blue" onclick="newElementCik()" >
         Sepete Ekle
     </button>
   </div>
@@ -114,7 +186,7 @@ adedini belirtiniz.</p>
       <h1>6₺ / Adet</h1>
     <p>Domates</p>
     <p>Antalya Sera</p>
-    <button id="asd" class ="center-blue" >
+    <button id="asd" class ="center-blue" onclick="newElementDom()" >
         Sepete Ekle
     </button>
   </div>
